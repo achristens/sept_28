@@ -54,3 +54,10 @@ stud = Student.new("Chris")
 
 puts stud.greeting
 puts prof.greeting
+
+
+puts prof.teach
+puts stud.learn
+
+# This returns an undefined method for the Student class. The teach method is exclusive to the Professor class, and since Student is not an inherit class of Professor, it cannot access its methods.
+puts stud.teach
