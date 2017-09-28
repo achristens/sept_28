@@ -22,8 +22,12 @@ house = {"objects"=>[{"first_name"=>"Scott", "related"=>{"representative_set_url
 
   # Get the URL for the photo of one representative into a variable.
 
-  person = house["objects"].select{ |person| person["name"]=="Luc Berthold"   }
-
-  person_picture = person[0]["photo_url"]
-
+  person_picture = house["objects"][6]["photo_url"]
   puts person_picture
+
+ # Longer alternative method to search by name:
+  # person = house["objects"].select{ |person| person["name"]=="Luc Berthold"   }
+  #
+  # person_picture = person[0]["photo_url"]
+  #
+  # puts person_picture
