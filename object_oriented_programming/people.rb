@@ -49,8 +49,8 @@ class Instructor < Person
 
 end
 
-prof = Instructor.new("Albert Einstein")
-stud = Student.new("Abby Christens")
+prof = Instructor.new("Nadia")
+stud = Student.new("Chris")
 
 puts stud.greeting
 puts prof.greeting
